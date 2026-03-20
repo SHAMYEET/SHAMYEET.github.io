@@ -75,7 +75,6 @@ nav {
   color: #ff6600;
 }
 
-/* ACTIVE NAV LINK */
 .navbar a.active {
   color: #ff6600;
   font-weight: bold;
@@ -97,19 +96,54 @@ nav {
   padding: 0 1rem;
 }
 
-/* ---------------- ABOUT ---------------- */
+/* ---------------- ABOUT (HERO) ---------------- */
 .about-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* 👈 FIXED (no shifting issue) */
   gap: 2rem;
   margin-bottom: 3rem;
 }
 
 .about-text {
   max-width: 600px;
+  width: 100%;
+  text-align: left;
 }
 
+/* ---------------- TYPING SYSTEM ---------------- */
+#typing-container {
+  display: inline;
+  text-align: left;
+}
+
+/* TEXT */
+#typing-heading {
+  margin: 0;
+}
+
+#typing-paragraph {
+  line-height: 1.6;
+}
+
+#typing-paragraph p {
+  margin: 10px 0;
+}
+
+/* REAL CURSOR */
+#cursor {
+  display: inline;
+  margin-left: 3px;
+  animation: blink 1s infinite;
+}
+
+/* BLINK */
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* PROFILE IMAGE */
 .profile-img {
   width: 250px;
   height: 250px;
@@ -128,6 +162,11 @@ nav {
   .about-section {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-text {
+    flex: 1;
   }
 }
 
@@ -136,7 +175,6 @@ nav {
   scroll-margin-top: 90px;
 }
 
-/* VERTICAL LAYOUT */
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -145,7 +183,6 @@ nav {
   margin-top: 2rem;
 }
 
-/* CARD */
 .project-card {
   width: 80%;
   max-width: 700px;
@@ -158,13 +195,11 @@ nav {
   text-align: left;
 }
 
-/* HOVER */
 .project-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* TEXT */
 .project-card h3 {
   font-size: 1.4rem;
   margin-bottom: 10px;
@@ -175,7 +210,6 @@ nav {
   margin-bottom: 15px;
 }
 
-/* BUTTON */
 .project-card a {
   text-decoration: none;
   color: white;
@@ -190,13 +224,28 @@ nav {
   opacity: 0.85;
 }
 
-/* ---------------- FOOTER ---------------- */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background-color: var(--navbar-bg);
-  color: var(--navbar-text);
+/* ---------------- ABOUT SECTION ---------------- */
+#about {
+  scroll-margin-top: 90px;
   margin-top: 3rem;
+  text-align: center;
+}
+
+.about-me-container {
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.contact-box {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid var(--profile-border);
+  border-radius: 15px;
+  background: var(--bg-color);
+}
+
+.contact-box p {
+  margin-bottom: 10px;
 }
 
 /* ---------------- SOCIALS ---------------- */
@@ -219,4 +268,13 @@ footer {
 
 .socials a:hover {
   color: #ff6600;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text);
+  margin-top: 3rem;
 }
