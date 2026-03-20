@@ -2,117 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shamit Mukati - Portfolio</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
   />
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="navbar-container">
-      <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
+<!-- NAVBAR -->
+<nav>
+  <div class="navbar-container">
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About Me</a></li>
+    </ul>
 
-      <button class="theme-toggle" onclick="toggleDarkMode()" id="themeButton">
-        🌙
-      </button>
-    </div>
-  </nav>
+    <button class="theme-toggle" onclick="toggleDarkMode()" id="themeButton">
+      🌙
+    </button>
+  </div>
+</nav>
 
-  <!-- MAIN CONTENT -->
-  <div class="container" id="home">
+<!-- MAIN -->
+<div class="container" id="home">
 
-    <!-- ABOUT SECTION -->
-    <div class="about-section">
-      <img src="profile.jpg" alt="Shamit Mukati" class="profile-img" />
+  <!-- HOME / INTRO -->
+  <div class="about-section">
+    <img src="profile.jpg" class="profile-img"/>
 
-      <div class="about-text">
-        <h1>Hi, I'm Shamit</h1>
+    <div class="about-text">
 
-        <p>
-          I’m <strong>Shamit Mukati</strong>, an engineering student at
-          <strong>Siddaganga Institute of Technology, Tumkur</strong>,
-          graduating in 2027.
-        </p>
-
-        <p>
-          I am passionate about learning new technologies and building
-          meaningful projects. I focus on writing clean, efficient code
-          and delivering high-quality results.
-        </p>
-
-        <p>
-          I believe in consistency, attention to detail, and always
-          improving my skills to become a better developer.
-        </p>
+      <!-- ✅ REAL TYPING SYSTEM -->
+      <div id="typing-container">
+        <h1 id="typing-heading"></h1>
+        <div id="typing-paragraph"></div>
+        <span id="cursor">|</span>
       </div>
+
     </div>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-      <h2>My Projects</h2>
-
-      <div class="projects-container">
-
-        <!-- PROJECT 1 -->
-        <div class="project-card">
-          <h3>Prep AI</h3>
-          <p>
-            An AI-powered tool to help students prepare smarter and faster.
-          </p>
-          <a href="https://shamyeet.github.io/prep-ai/" target="_blank">
-            View Project
-          </a>
-        </div>
-
-        <!-- PROJECT 2 -->
-        <div class="project-card">
-          <h3>Dark / Light Calculator</h3>
-          <p>
-            A responsive calculator with dark and light mode support.
-          </p>
-          <a href="https://shamyeet.github.io/dark-light-calculator/" target="_blank">
-            View Project
-          </a>
-        </div>
-
-      </div>
-    </section>
-
   </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <h2>Connect with me</h2>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>My Projects</h2>
 
-    <div class="socials">
-      <a href="https://github.com/shamyeeeeet" target="_blank">
-        <i class="fab fa-github"></i> GitHub
-      </a>
+    <div class="projects-container">
 
-      <a href="https://linkedin.com/in/shamit-m" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
+      <div class="project-card">
+        <h3>Prep AI</h3>
+        <p>AI-powered study assistant for smarter preparation.</p>
+        <a href="https://shamyeet.github.io/prep-ai/" target="_blank">
+          View Project
+        </a>
+      </div>
 
-      <a href="https://instagram.com/shamit.1905" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram
-      </a>
+      <div class="project-card">
+        <h3>Dark / Light Calculator</h3>
+        <p>Responsive calculator with theme toggle.</p>
+        <a href="https://shamyeet.github.io/dark-light-calculator/" target="_blank">
+          View Project
+        </a>
+      </div>
+
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- ABOUT ME -->
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="about-me-container">
+
+      <p>
+        I'm Shamit Mukati, a third-year engineering student with a strong interest in web development and problem solving.
+        I enjoy building projects that are both functional and visually clean.
+      </p>
+
+      <div class="contact-box">
+
+        <p><strong>Email:</strong> shamitmukati1905@gmail.com</p>
+
+        <div class="socials">
+          <a href="https://github.com/shamyeet" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+
+          <a href="https://linkedin.com/in/shamit-m" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+
+          <a href="https://instagram.com/shamit.1905" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Shamit Mukati</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
